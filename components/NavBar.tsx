@@ -19,8 +19,8 @@ export default function NavBar() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem>
-                    <Button>
-                        <Link href="https://github.com/Vitrixxl/crud-nextjs" target="_blank" color="primary">Users</Link>
+                    <Button variant="ghost" color="primary" href="https://github.com/Vitrixxl/crud-nextjs" target="_blank" size="md">
+                        Repository
                     </Button>
                 </NavbarItem>
             </NavbarContent>
