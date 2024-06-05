@@ -209,14 +209,15 @@ export default function App({ users }: { users: User[] }) {
                                 </Button>
                             </DropdownTrigger>
                             <DropdownMenu
-                                disallowEmptySelection
+                                disallowEmptySelection={false}
                                 aria-label="Table Columns"
                                 closeOnSelect={false}
                                 selectedKeys={visibleColumns}
                                 selectionMode="multiple"
+
                                 onSelectionChange={setVisibleColumns}
                             >
-                                {columns.map((column) => (
+                                {visibleColumns && columns.map((column) => (
                                     <DropdownItem key={column.uid} className="capitalize">
                                         {capitalize(column.name)}
                                     </DropdownItem>
